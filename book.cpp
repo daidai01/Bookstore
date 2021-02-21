@@ -86,7 +86,7 @@ void BookManager::modify(string str[])
     if (!userManager.checkPrivilege(3))error("Invalid");
 
   //  cout<<selectedBook.size()<<endl;
-    if (selectedBook.size()<=1) error("Invalid");
+ //   if (selectedBook.size()<=1) error("Invalid");
 
     int offset = selectedBook[selectedBook.size() - 1];
     Book tempBook = readOtherData<Book>(BOOK, offset);
@@ -189,7 +189,7 @@ void BookManager::import(int _quantity, double _cost)
     if (!userManager.checkPrivilege(3)) error("Invalid");
     if(_quantity>1000000) error("Invalid");
 
-    if (selectedBook.size()<=1) error("Invalid");
+   // if (selectedBook.size()<=1) error("Invalid");
     int offset = selectedBook[selectedBook.size() - 1];
     Book tempBook = readOtherData<Book>(BOOK, offset);
 
@@ -303,7 +303,7 @@ void BookManager::showFinance(int _time)
 void BookManager::buy(string &isbn, int _quantity)
 {
     if (!userManager.checkPrivilege(1)) error("Invalid");
-    if(selectedBook.size()<=1) error("Invalid");
+  //  if(selectedBook.size()<=1) error("Invalid");
     if (isbn.length() > 20) error("Invalid");
     if (_quantity > 1000000) error("Invalid");
 
