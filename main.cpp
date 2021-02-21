@@ -28,7 +28,7 @@ int main()
     {
         try
         {
-            cout<<"# "<<line<<endl;
+          //  cout<<"# "<<line<<endl;
             runProgram(line);
         } catch (ErrorException &ex)
         {
