@@ -9,8 +9,8 @@ using namespace std;
 
 int main()
 {
-    freopen("../Data/BasicDataSet/testcase6.txt", "r", stdin);
-    freopen("../myout.txt", "w", stdout);
+ //   freopen("../Data/BasicDataSet/testcase6.txt", "r", stdin);
+ //   freopen("../myout.txt", "w", stdout);
 
     try
     {
